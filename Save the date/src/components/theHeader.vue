@@ -9,7 +9,7 @@
         </ul>
       </nav>
     </div>
-    <img src="../assets/couple.jpg" alt="Wedding couple" />
+    <img src="public/couple.jpg" alt="Wedding couple" />
   </template>
   
   <script setup>

@@ -3,12 +3,15 @@
   <TheHeader />
   <div class="day-count">
     <DayCount />
+    
   </div>
+  <TheLocation />
 </template>
 
 <script setup>
 import DayCount from './components/DayCount.vue';
 import TheHeader from './components/TheHeader.vue';
+import TheLocation from './components/TheLocation.vue';
 
 //
 </script>

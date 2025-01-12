@@ -1,5 +1,5 @@
 <template>
-    Our day is coming in
+    <h3>Our day is coming in</h3>
     <div class="countdown">
       <div class="countdown-item">
         <span class="count">{{ days }}</span>
@@ -79,6 +79,11 @@
   .label {
     font-size: 1rem;
     color: #666;
+  }
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
   }
   </style>
   
