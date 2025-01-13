@@ -3,8 +3,8 @@
   <TheHeader />
   <div class="day-count">
     <DayCount />
-    
-  </div>
+      </div>
+      <br>
   <TheLocation />
 </template>
 
