@@ -10,9 +10,8 @@
 
 <script setup>
 import DayCount from './components/DayCount.vue';
-import TheHeader from './components/TheHeader.vue';
 import TheLocation from './components/TheLocation.vue';
-
+import TheHeader from './components/TheeHeader.vue';
 //
 </script>
 <style>
