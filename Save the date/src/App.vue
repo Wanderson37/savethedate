@@ -6,6 +6,7 @@
       </div>
       <br>
   <TheLocation />
+  <br>
 </template>
 
 <script setup>

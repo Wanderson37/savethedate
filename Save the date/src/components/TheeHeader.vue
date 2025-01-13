@@ -5,7 +5,7 @@
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Presents List</a></li>
-          <li><a href="#">Location Address</a></li>
+          <li><a href="#">Event location</a></li>
         </ul>
       </nav>
     </div>

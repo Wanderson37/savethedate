@@ -5,7 +5,7 @@
   
       <!-- Endereço -->
       <div class="address">
-        <h2>Endereço do Evento</h2>
+        <h2>Event Location</h2>
         <p>{{ address }}</p>
       </div>
     </div>
@@ -15,13 +15,13 @@
   /* global google */
   import { ref, onMounted } from 'vue';
   
-  const address = 'Rua Exemplo, 123, Cidade, Estado, País'; // Altere o endereço conforme necessário
+  const address = 'Av. do Pontal - Tarumã Açu, Manaus - AM'; // Altere o endereço conforme necessário
   const mapRef = ref(null);
   
   // Função para inicializar o mapa
   const initMap = () => {
     const map = new google.maps.Map(mapRef.value, {
-      center: { lat: -23.55052, lng: -46.633308 }, // Coordenadas de exemplo
+      center: { lat: -2.953697088106651, lng: -60.09786083612656 }, // Coordenadas de exemplo
       zoom: 15,
     });
   
@@ -29,7 +29,7 @@
     new google.maps.Marker({
       position: { lat: -23.55052, lng: -46.633308 }, // Coordenadas de exemplo
       map: map,
-      title: 'Local do Evento',
+      title: 'Event Location',
     });
   };
   
