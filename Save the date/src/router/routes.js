@@ -1,10 +1,7 @@
 const routes = [
   {
     path: '/',
-    
-    children: [
-      { path: '', component: () => import('../App.vue') }
-    ]
+    component: () => import('../App.vue')
   },
 
   // Always leave this as last one,
