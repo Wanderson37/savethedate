@@ -20,6 +20,7 @@
       </div>
     </div>
   </div>
+  <br>
   </template>
   
   <script setup>
@@ -56,8 +57,11 @@
   
   <style>
   .container {
-    display: block;
+   display: block;
+   position: relative;
+   
   }
+
   .countdown {
     display: flex;
     justify-content: center;

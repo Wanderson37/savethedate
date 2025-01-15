@@ -1,6 +1,6 @@
 <template>
-      <q-layout view="lHh lp lFf" container style="height: 100px" class="shadow-2 rounded-borders">
-      <q-header  class="bg-primary " elevated  >
+      <q-layout view="lHh lp lFf"container style="height: 100px" >
+      <q-header   class="bg-primary " elevated >
         <q-toolbar>
           <q-toolbar-title style="margin-left: 20%;">C & W</q-toolbar-title>
         </q-toolbar>
