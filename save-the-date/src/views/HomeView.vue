@@ -1,12 +1,9 @@
 <template>
   <TheHeader />
   <ThePhoto />
-  <div class="day-count">
-    <DayCount />
-      </div>
-      <br>
+  <DayCount />      
   <TheLocation />
-  <br>
+  
 </template>
 
 <script setup>
@@ -17,10 +14,5 @@ import ThePhoto from '@/components/ThePhoto.vue';
 
 </script>
 <style>
-.daycount {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  height: 200rem;
-}
+
 </style>

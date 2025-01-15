@@ -1,6 +1,6 @@
 <template>
     <div class="container" >
-        <img class="img-couple" src="public/couple.jpg" alt="image of couple"/>
+        <img class="img-couple" src="/couple.jpg" alt="image of couple"/>
         <span class="name-couple"> Carolina e Wanderson </span>
         <span class="event-date">24.06.2025</span>
         </div>
@@ -20,9 +20,11 @@ img {
      z-index: -1; 
 }
 .container{
-    
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
-  margin-top: 50vh;
+  
 }
 
 </style>

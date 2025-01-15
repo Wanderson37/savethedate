@@ -1,5 +1,6 @@
 <template>
-    <h3>Our day is coming in</h3>
+    <div class="container">
+      <h3>Our day is coming in</h3>
     <div class="countdown">
       <div class="countdown-item">
         <span class="count">{{ days }}</span>
@@ -18,6 +19,7 @@
         <span class="label">Seconds</span>
       </div>
     </div>
+  </div>
   </template>
   
   <script setup>
@@ -53,6 +55,9 @@
   </script>
   
   <style>
+  .container {
+    display: block;
+  }
   .countdown {
     display: flex;
     justify-content: center;
