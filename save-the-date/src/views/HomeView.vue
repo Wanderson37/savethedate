@@ -1,9 +1,11 @@
 <template>
+  <q-layout>
   <TheHeader />
   <ThePhoto />
+   </q-layout>
   <DayCount />      
   <TheLocation />
-  
+ 
 </template>
 
 <script setup>
