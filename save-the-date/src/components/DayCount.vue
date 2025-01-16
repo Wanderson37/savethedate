@@ -92,4 +92,14 @@ h3 {
   font-size: 2rem;
   color: #333;
 }
+@media (max-width: 768px) {
+  .countdown {
+    align-items: center;
+    flex-direction: column;
+  }
+  .countdown-item {
+    margin-bottom: 1rem;
+    max-width: 120px;
+  }
+}
 </style>

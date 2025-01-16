@@ -1,11 +1,11 @@
 <template>
   <div id="location" class="map-container">
     <!-- Mapa do Google -->
+
     <div class="map" ref="mapRef"></div>
 
     <!-- Endereço -->
     <div class="address">
-      <h2>Event Location</h2>
       <p style="font-size: 1.5rem">Chácara Bella Vista</p>
       <p>{{ address }}</p>
     </div>
@@ -53,6 +53,7 @@ onMounted(() => {
   align-items: flex-start;
   gap: 2rem;
   margin-top: 10%;
+  margin-bottom: 20%;
 }
 
 .map {
@@ -79,5 +80,16 @@ onMounted(() => {
 .address p {
   font-size: 1rem;
   color: #666;
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  .address {
+    width: 70%;
+  }
 }
 </style>

@@ -48,4 +48,12 @@ img {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+@media screen and (max-width: 768px) {
+  .name-couple {
+    font-size: 3rem;
+  }
+  .event-date {
+    font-size: 2rem;
+  }
+}
 </style>
