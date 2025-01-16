@@ -1,30 +1,32 @@
 <template>
-  <q-page>
-    <q-carousel v-model="slide" animated infinite swipeable arrows navigation>
-      <q-carousel-slide
-        v-for="(present, index) in presents"
-        :key="index"
-        :name="index"
-        :img-src="present.image"
-      >
-        <div class="q-pa-md text-center">
-          <q-img :src="present.image" :alt="present.name" class="full-width" />
-          <q-card class="q-my-md">
-            <q-card-section>
-              <div class="text-h6">{{ present.name }}</div>
-              <div>{{ present.description }}</div>
-              <div class="text-subtitle1 text-bold text-primary q-my-md">
-                {{ present.price }}
-              </div>
-            </q-card-section>
-            <q-card-actions align="center">
-              <q-btn label="Comprar" color="primary" @click="buyPresent(present)" />
-            </q-card-actions>
-          </q-card>
-        </div>
-      </q-carousel-slide>
-    </q-carousel>
-  </q-page>
+  <q-page-container>
+    <q-page>
+      <q-carousel v-model="slide" animated infinite swipeable arrows navigation>
+        <q-carousel-slide
+          v-for="(present, index) in presents"
+          :key="index"
+          :name="index"
+          :img-src="present.image"
+        >
+          <div class="q-pa-md text-center">
+            <q-img :src="present.image" :alt="present.name" class="full-width" />
+            <q-card class="q-my-md">
+              <q-card-section>
+                <div class="text-h6">{{ present.name }}</div>
+                <div>{{ present.description }}</div>
+                <div class="text-subtitle1 text-bold text-primary q-my-md">
+                  {{ present.price }}
+                </div>
+              </q-card-section>
+              <q-card-actions align="center">
+                <q-btn label="Comprar" color="primary" @click="buyPresent(present)" />
+              </q-card-actions>
+            </q-card>
+          </div>
+        </q-carousel-slide>
+      </q-carousel>
+    </q-page>
+  </q-page-container>
 </template>
 
 <script setup>

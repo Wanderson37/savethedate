@@ -1,47 +1,48 @@
 <template>
   <div class="map-container">
     <!-- Mapa do Google -->
-    <div class="map" ref="map"></div>
+    <div class="map" ref="mapRef"></div>
 
     <!-- Endereço -->
     <div class="address">
       <h2>Event Location</h2>
+      <p style="font-size: 1.5rem">Chácara Bella Vista</p>
       <p>{{ address }}</p>
     </div>
   </div>
+
   <br />
 </template>
 
 <script setup>
 /* global google */
 import { ref, onMounted } from 'vue'
-const map = ref(null)
-onMounted(() => {
-  new window.google.maps.Map(map.value, {
-    center: { lat: -2.953697088106651, lng: -60.09786083612656 }, // Coordenadas de exemplo
-    zoom: 15,
-  })
-})
 const address = 'Av. do Pontal - Tarumã Açu, Manaus - AM' // Altere o endereço conforme necessário
 const mapRef = ref(null)
 
-// Função para inicializar o mapa
 const initMap = () => {
-  const map = new google.maps.Map(mapRef.value, {
-    center: { lat: -2.953697088106651, lng: -60.09786083612656 }, // Coordenadas de exemplo
-    zoom: 15,
-  })
+  if (mapRef.value) {
+    const map = new google.maps.Map(mapRef.value, {
+      center: { lat: -2.964747667312622, lng: -60.10305404663086 },
+      zoom: 16,
+    })
 
-  // Marcador no mapa
-  new google.maps.Marker({
-    position: { lat: -23.55052, lng: -46.633308 }, // Coordenadas de exemplo
-    map: map,
-    title: 'Event Location',
-  })
+    // Marcador no mapa
+    new google.maps.Marker({
+      position: { lat: -2.964747667312622, lng: -60.10305404663086 },
+      map: map,
+      title: 'Event Location',
+    })
+  } else {
+    console.error('mapRef is null')
+  }
 }
 
 onMounted(() => {
-  initMap() // Inicializa o mapa ao montar o componente
+  window.initMap = initMap
+  if (window.google) {
+    initMap()
+  }
 })
 </script>
 
