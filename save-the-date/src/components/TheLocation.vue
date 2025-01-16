@@ -52,6 +52,7 @@ onMounted(() => {
   justify-content: space-between;
   align-items: flex-start;
   gap: 2rem;
+  margin-top: 10%;
 }
 
 .map {

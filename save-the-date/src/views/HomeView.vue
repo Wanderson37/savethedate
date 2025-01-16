@@ -4,7 +4,7 @@
     <ThePhoto />
     <DayCount />
     <TheLocation />
-    <PresentList />
+
     <TheFooter />
   </q-layout>
 </template>
