@@ -1,5 +1,5 @@
 <template>
-  <div class="map-container">
+  <div id="location" class="map-container">
     <!-- Mapa do Google -->
     <div class="map" ref="mapRef"></div>
 

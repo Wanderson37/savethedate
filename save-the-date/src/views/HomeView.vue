@@ -1,10 +1,9 @@
 <template>
-  <q-layout>
+  <q-layout id="home">
     <TheHeader />
     <ThePhoto />
     <DayCount />
     <TheLocation />
-
     <TheFooter />
   </q-layout>
 </template>
