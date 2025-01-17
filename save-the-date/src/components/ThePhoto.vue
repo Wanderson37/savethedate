@@ -2,12 +2,24 @@
   <div class="container">
     <img class="img-couple" src="/couple.jpg" alt="image of couple" />
     <div class="name-div">
+      <span class="save-date"> Save our Date </span>
       <span class="name-couple"> Carolina e Wanderson </span>
       <span class="event-date">24.06.2025</span>
     </div>
   </div>
 </template>
 <style>
+.name-couple {
+  font-family: 'Lavishly Yours', serif;
+  font-style: normal;
+  display: block;
+  font-size: 7rem;
+  color: white;
+  top: 50vh;
+  left: 50%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 img {
   padding: 0;
   width: 100%;
@@ -24,7 +36,7 @@ img {
   margin: 0 auto;
   text-align: center;
 }
-.name-couple {
+.save-date {
   display: block;
   font-size: 5rem;
   color: white;
@@ -53,6 +65,9 @@ img {
     font-size: 3rem;
   }
   .event-date {
+    font-size: 2rem;
+  }
+  .save-date {
     font-size: 2rem;
   }
 }
